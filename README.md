@@ -12,7 +12,7 @@ parcours.\
 Le site est une **SPA moderne, rapide et responsive** basée sur une
 stack front-end performante.
 
-👉 **Démo en ligne :** https://portfolio-antoine-mouille.vercell.app
+👉 **Démo en ligne :** https://AntoineMouille.github.io/portfolio
 
 ------------------------------------------------------------------------
 
@@ -61,4 +61,4 @@ Ouvrez votre navigateur à l'adresse :\
 Le portfolio est actuellement en ligne il manque ceratine page qui sont en developpement.
 
 Mais vous pouvez voir l'aperçu sur ce lien:
-👉 https://portfolio-antoine-mouille.vercell.app
+👉 https://AntoineMouille.github.io/portfolio
