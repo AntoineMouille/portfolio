@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 function Home() {
   const cards = [
-    { title: "Projets", text: "Découvrez mes projets récents et mes réalisations.", link: "/Projects" },
-    { title: "Mes skills", text: "En savoir plus sur mes compétences.", link: "/About" },
-    { title: "Contact", text: "Contactez-moi via email ou LinkedIn pour collaborer.", link: "/Contact" },
-    { title:"Mon CV", text: "Voici mon CV ainsi que le lien de telechargement.", link: "/CV"},
+    { title: "Projets", text: "Découvrez mes projets récents et mes réalisations.", link: "/portfolio/projects" },
+    { title: "Mes skills", text: "En savoir plus sur mes compétences.", link: "/portfolio/about" },
+    { title: "Contact", text: "Contactez-moi via email ou LinkedIn pour collaborer.", link: "/portfolio/contact" },
+    { title:"Mon CV", text: "Voici mon CV ainsi que le lien de telechargement.", link: "/portfolio/CV"},
   ];
 
   return (
