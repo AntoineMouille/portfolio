@@ -1,16 +1,64 @@
-# React + Vite
+# 🚀 Portfolio Personnel -- Antoine Mouille
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![GitHub
+Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
 
-Currently, two official plugins are available:
+Bienvenue sur le dépôt de mon **portfolio personnel**, conçu pour mettre
+en avant mes compétences en informatique, mes projets et mon
+parcours.\
+Le site est une **SPA moderne, rapide et responsive** basée sur une
+stack front-end performante.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 **Démo en ligne :** https://portfolio-antoine-mouille.vercell.app
 
-## React Compiler
+------------------------------------------------------------------------
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Stack Technique
 
-## Expanding the ESLint configuration
+Le projet repose sur des technologies fiables et modernes :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   **Framework :** React 19 (Hooks + Functional Components)
+-   **Bundler :** Vite (démarrage instantané)
+-   **Styles :** Tailwind CSS (design utilitaire et responsive)
+-   **Routing :** React Router DOM (HashRouter → compatibilité GitHub
+    Pages)
+-   **Qualité :** ESLint pour maintenir un code propre et cohérent
+
+------------------------------------------------------------------------
+
+## 📂 Structure du Projet
+
+    src/
+     ├── components/     # Composants réutilisables (Navbar, Footer, Cards…)
+     ├── pages/          # Pages principales (Accueil, Projets, Contact…)
+     ├── assets/         # Images, logos et fichiers statiques
+     └── App.jsx         # Layout global et configuration des routes
+
+------------------------------------------------------------------------
+
+## 🚀 Installation en Local
+
+Clonez le dépôt puis installez les dépendances :
+
+``` bash
+git clone https://github.com/AntoineMouille/portfolio.git
+cd portfolio
+
+npm install
+npm run dev
+```
+
+Ouvrez votre navigateur à l'adresse :\
+👉 http://localhost:5173
+
+------------------------------------------------------------------------
+
+## 🖼️ Aperçu du Portfolio
+
+Le portfolio est actuellement en ligne il manque ceratine page qui sont en developpement.
+
+Mais vous pouvez voir l'aperçu sur ce lien:
+👉 https://portfolio-antoine-mouille.vercell.app
