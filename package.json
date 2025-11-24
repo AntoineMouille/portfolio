@@ -1,5 +1,6 @@
 {
   "name": "mon-portfolio",
+  "homepage": "https://AntoineMouille.github.io/portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "homepage": "https://AntoineMouille.github.io/portfolio"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.1",
