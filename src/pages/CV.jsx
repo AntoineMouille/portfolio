@@ -10,13 +10,13 @@ function CV() {
 
       {/* PDF affiché */}
       <div className="w-full max-w-5xl border border-white/20 rounded-2xl shadow-2xl overflow-hidden mb-8">
-        <img src="/CV_Antoine_Mouille.png" alt="" />
+        <img src="/pulbic/CV_Antoine_Mouille.png" alt="" />
       </div>
 
       {/* Lien de téléchargement */}
       <div className="text-center mb-10">
         <a
-          href="/CV_Antoine_Mouille.pdf"
+          href="/public/CV_Antoine_Mouille.pdf"
           download
           className="px-8 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
         >
