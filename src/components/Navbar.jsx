@@ -6,13 +6,13 @@ function Navbar() {
                     bg-gray-900/30 backdrop-blur-lg 
                     border-b border-white/20 shadow-xl"> 
       <div className="flex justify-between items-center max-w-7xl mx-auto text-white">
-        <Link to="/portfolio" className="text-xl font-bold">Mon Portfolio</Link>
+        <Link to="/" className="text-xl font-bold">Mon Portfolio</Link>
         <div className="space-x-4">
-          <Link to="/portfolio" className="hover:text-gray-300">Accueil</Link>
-          <Link to="/portfolio/CV" className="hover:text-gray-300">Mon CV</Link>
-          <Link to="/portfolio/projects" className="hover:text-gray-300">Projets</Link>
-          <Link to="/portfolio/about" className="hover:text-gray-300">Mes Skills</Link>
-          <Link to="/portfolio/contact" className="hover:text-gray-300">Contact</Link>
+          <Link to="/" className="hover:text-gray-300">Accueil</Link>
+          <Link to="/CV" className="hover:text-gray-300">Mon CV</Link>
+          <Link to="/projects" className="hover:text-gray-300">Projets</Link>
+          <Link to="/about" className="hover:text-gray-300">Mes Skills</Link>
+          <Link to="/contact" className="hover:text-gray-300">Contact</Link>
         </div>
       </div>
     </nav>

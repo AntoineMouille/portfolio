@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -14,11 +14,11 @@ function App() {
         <Navbar />
         <main className="flex-grow ">
           <Routes>
-            <Route path="/portfolio" element={<Home />} />
-            <Route path="/portfolio/projects" element={<Projects />} />
-            <Route path="/portfolio/CV" element={<CV/>}/>
-            <Route path="/portfolio/contact" element={<Contact />} />
-            <Route path="/portfolio/about" element={<About />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/CV" element={<CV/>}/>
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />
