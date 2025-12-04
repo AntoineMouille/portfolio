@@ -35,8 +35,9 @@ function Navbar() {
 
         {/* Menu Mobile (Version simple si écran petit) */}
         <div className="md:hidden flex space-x-4 text-sm">
+          <Link to="/about" className='hover:text-blue-400'>Skills</Link>
            <Link to="/projects" className="hover:text-blue-400">Projets</Link>
-           <Link to="/contact" className="text-blue-400 font-bold">Contact</Link>
+           <Link to="/contact" className="hover:text-blue-400 font-bold">Contact</Link>
         </div>
 
       </div>
