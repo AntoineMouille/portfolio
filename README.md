@@ -58,7 +58,7 @@ Ouvrez votre navigateur à l'adresse :\
 
 ## 🖼️ Aperçu du Portfolio
 
-Le portfolio est actuellement en ligne il manque ceratine page qui sont en developpement.
+Le portfolio est actuellement en ligne il manque certaine page qui sont en developpement.
 
 Mais vous pouvez voir l'aperçu sur ce lien:
 👉 https://AntoineMouille.github.io/portfolio
