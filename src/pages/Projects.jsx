@@ -1,13 +1,23 @@
+import { Link } from "react-router-dom";
+// HashRouter n'est pas utilisé ici, je l'ai retiré pour nettoyer, 
+// mais tu peux le remettre si tu l'utilises ailleurs.
+
 function Projects() {
-  // AJOUTE TES PROJETS ICI
   const myProjects = [
     {
-      title: "Portfolio React",
+      title: "Portfolio",
       desc: "Création de ce portfolio moderne utilisant React, Tailwind CSS et des animations fluides.",
       tech: ["React", "Tailwind", "Vite"],
-      status: "En cours"
+      status: "En cours",
+      link: "/portfolio"
     },
-    
+    {
+      title: "Pacman",
+      desc: "Création d'un pacman avec Java est JavaFX.",
+      tech: ["Java","JavaFx"],
+      status: "En cours",
+      link: "/pacman"
+    }
   ];
 
   return (
@@ -29,7 +39,7 @@ function Projects() {
         {/* Grille des Projets */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {myProjects.map((proj, index) => (
-            <div key={index} className="group relative bg-gray-800/40 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:-translate-y-2 transition-all duration-300 shadow-xl hover:shadow-blue-500/20">
+            <div key={index} className="group relative flex flex-col bg-gray-800/40 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-gray-800/60 transition-all duration-300">
               
               {/* Statut (badge) */}
               <div className="absolute top-4 right-4">
@@ -46,14 +56,25 @@ function Projects() {
                 {proj.desc}
               </p>
 
-              {/* Tags Techno */}
-              <div className="flex flex-wrap gap-2 mt-auto">
+              {/* Tags Techno + Bouton Details */}
+              {/* Ajout de 'items-center' pour l'alignement vertical */}
+              <div className="flex flex-wrap items-center gap-2 mt-auto w-full">
+                
                 {proj.tech.map((t) => (
                   <span key={t} className="px-3 py-1 text-xs bg-gray-700/50 border border-white/5 rounded-lg text-gray-300">
                     {t}
                   </span>
                 ))}
+                
+                {/* MODIFICATION ICI : ml-auto pousse l'élément à droite */}
+                <div className="ml-auto px-4 py-1 text-sm bg-blue-800/40 backdrop-blur-md border border-white/10 rounded-xl hover:-translate-y-1 transition-all duration-300 shadow-xl hover:shadow-blue-500/20 cursor-pointer hover:bg-blue-700/50">
+                  <Link key={proj.title} to={proj.link} className="block w-full h-full">
+                    details
+                  </Link>
+                </div>
+              
               </div>
+              
             </div>
           ))}
         </div>

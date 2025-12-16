@@ -5,7 +5,7 @@ function Home() {
     { title: "Projets", text: "Découvrez mes projets récents et mes réalisations.", link: "/projects" },
     { title: "Mes Skills", text: "En savoir plus sur mes compétences techniques.", link: "/about" },
     { title: "Contact", text: "Contactez-moi via email ou LinkedIn pour collaborer.", link: "/contact" },
-    { title: "Mon CV", text: "Téléchargez mon Curriculum Vitae au format PDF.", link: "/CV"},
+    { title: "Mon CV", text: "Téléchargez mon CV au format PDF.", link: "/CV"},
   ];
 
   return (
