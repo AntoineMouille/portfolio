@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 // HashRouter n'est pas utilisé ici, je l'ai retiré pour nettoyer, 
 // mais tu peux le remettre si tu l'utilises ailleurs.
 
@@ -9,14 +10,14 @@ function Projects() {
       desc: "Création de ce portfolio moderne utilisant React, Tailwind CSS et des animations fluides.",
       tech: ["React", "Tailwind", "Vite"],
       status: "En cours",
-      link: "/portfolio"
+      link: "/projects/portfolio"
     },
     {
       title: "Pacman",
       desc: "Création d'un pacman avec Java est JavaFX.",
       tech: ["Java","JavaFx"],
       status: "En cours",
-      link: "/pacman"
+      link: "/projects/pacman"
     }
   ];
 
@@ -67,9 +68,12 @@ function Projects() {
                 ))}
                 
                 {/* MODIFICATION ICI : ml-auto pousse l'élément à droite */}
-                <div className="ml-auto px-4 py-1 text-sm bg-blue-800/40 backdrop-blur-md border border-white/10 rounded-xl hover:-translate-y-1 transition-all duration-300 shadow-xl hover:shadow-blue-500/20 cursor-pointer hover:bg-blue-700/50">
-                  <Link key={proj.title} to={proj.link} className="block w-full h-full">
-                    details
+                <div className="group ml-auto px-4 py-1 text-sm bg-blue-800/40 backdrop-blur-md border border-white/10 rounded-xl  shadow-xl hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] cursor-pointer hover:bg-blue-700/50">
+                  <Link to={proj.link} className="flex items-center gap-2">
+                    <span>details</span>
+                    <span className="transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0">
+                      →
+                    </span>
                   </Link>
                 </div>
               
