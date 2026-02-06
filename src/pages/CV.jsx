@@ -33,6 +33,15 @@ function CV() {
           <span>📥</span> Télécharger le PDF
         </a>
       </div>
+      <div className="relative z-10 mt-5">
+        <a
+          href="./CV_Antoine_Mouille_english.pdf"
+          download
+          className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-xl shadow-lg hover:shadow-blue-500/50 hover:scale-105 transition-all duration-300"
+        >
+          <span>📥</span> Télécharger le PDF en anglais
+        </a>
+      </div>
     </div>
   );
 }

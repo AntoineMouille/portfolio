@@ -15,7 +15,7 @@ function Pacman() {
   ];
 
   const projectMedia = [
-    { type: 'video', url: './public/video/pacman.mp4' },
+    { type: 'video', url: './pacman.mp4' },
     
   ];
 

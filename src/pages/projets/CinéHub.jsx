@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faPhp, faCss3Alt, faLaravel, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { SiTailwindcss, SiVite } from "react-icons/si";
+import { SiTailwindcss, SiVite,SiGit, SiGitlab  } from "react-icons/si";
 import IconLogo from '../../components/IconLogo';
 import Back from '../../components/Back';
 
@@ -23,16 +23,16 @@ function Cinehub(){
   ];
 
   const projectMedia = [
-    { type: 'image', url: './photo/cinehub1.png' },
-    { type: 'image', url: './public/photo/cinehub2.png' },
-    { type: 'image', url: './public/photo/cinehub3.png' },
-    { type: 'image', url: './public/photo/cinehub4.png' },
-    { type: 'video', url: './public/video/cinehub.mp4'},
-    { type: 'image', url: './public/photo/cinehub5.png' },
-    { type: 'video', url: './public/video/cinehub2.mp4'},
-    { type: 'video', url: './public/video/cinehub3.mp4'},
-    { type: 'video', url: './public/video/cinehub4.mp4'},
-    { type: 'image', url: './public/photo/cinehub6.png' },
+    { type: 'image', url: './cinehub1.png' },
+    { type: 'image', url: './cinehub2.png' },
+    { type: 'image', url: './cinehub3.png' },
+    { type: 'image', url: './cinehub4.png' },
+    { type: 'video', url: './cinehub.mp4'},
+    { type: 'image', url: './cinehub5.png' },
+    { type: 'video', url: './cinehub2.mp4'},
+    { type: 'video', url: './cinehub3.mp4'},
+    { type: 'video', url: './cinehub4.mp4'},
+    { type: 'image', url: './cinehub6.png' },
     
 
   ];
@@ -82,6 +82,18 @@ function Cinehub(){
                 <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Vite</span>
               </div>
             </div>
+            <div className="p-2 w-48 text-center bg-gray-800/40 backdrop-blur-md border border-white/10 rounded-3xl shadow-2xl z-10 cursor-default hover:border-blue-400/30 transition-all">
+              <div className="flex items-center justify-center gap-2">
+                <SiGit className="text-white text-xl" />
+                <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Git</span>
+              </div>
+            </div>
+            <div className="p-2 w-48 text-center bg-gray-800/40 backdrop-blur-md border border-white/10 rounded-3xl shadow-2xl z-10 cursor-default hover:border-blue-400/30 transition-all">
+              <div className="flex items-center justify-center gap-2">
+                <SiGitlab className="text-white text-xl" />
+                <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">GitLab</span>
+              </div>
+              </div>
           </div>
         </div>
 
@@ -119,7 +131,7 @@ function Cinehub(){
             </button>
           </div>
           <div className='flex justify-center cursor-pointer'>
-            <button className=' mt-6'><a href='https://github.com/AntoineMouille/portfolio' className='cursor-pointer'><IconLogo name="Github" link={faGithub}/></a></button>
+            <button className=' mt-6'><a href='https://github.com/AntoineMouille/Cinehub_iut' className='cursor-pointer'><IconLogo name="Github" link={faGithub}/></a></button>
           </div>
         </div>
       </div>
