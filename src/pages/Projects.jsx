@@ -16,15 +16,52 @@ function Projects() {
       title: "Pacman",
       desc: "Création d'un pacman avec Java est JavaFX.",
       tech: ["Java","JavaFx"],
-      status: "En cours",
+      status: "Terminé",
       link: "/projects/pacman"
-    }
+    },
+    {
+      title: "Cinéhub",
+      desc: "Création d'un site web type cinema filmhub",
+      tech: ["PHP","Laravel"],
+      status: "Terminé",
+      link: "/projects/cinehub"
+    },
+    {
+      title: "Lensymphony",
+      desc: "Création d'une appliacation de syntétiseur de musique et de son site web",
+      tech: ["PHP","Java"],
+      status: "Terminé",
+      link: "/projects/lensymphony"
+    },
+    {
+      title: "Beta RPG",
+      desc: "Création d'une Beta de RPG en java",
+      tech: ["Java"],
+      status: "En cours",
+      link: "/projects/rpg"
+    },
+    {
+      title: "App mobile checklist",
+      desc: "Création d'une application mobile de checklist",
+      tech: ["React Native"],
+      status: "Terminé",
+      link: "/projects/checklist_app"
+    },
+    {
+      title: "AhdjinPCP",
+      desc: "Création d'une application de quiz sur des cokctail",
+      tech: ["Python","Flask"],
+      status: "Terminé",
+      link: "/projects/ahdjinpcp"
+    },
+
+    
   ];
 
   return (
     <div className="relative text-white min-h-screen bg-gray-900 overflow-hidden font-sans pt-24">
       
-      {/* BLOBS */}
+      
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-600 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse"></div>
 
@@ -37,12 +74,12 @@ function Projects() {
           <p className="text-gray-400">Découvrez mes réalisations académiques et personnelles.</p>
         </div>
 
-        {/* Grille des Projets */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {myProjects.map((proj, index) => (
             <div key={index} className="group relative flex flex-col bg-gray-800/40 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-gray-800/60 transition-all duration-300">
               
-              {/* Statut (badge) */}
+              
               <div className="absolute top-4 right-4">
                 <span className={`text-xs font-bold px-2 py-1 rounded-full ${proj.status === "Terminé" ? "bg-green-500/20 text-green-300" : "bg-yellow-500/20 text-yellow-300"}`}>
                   {proj.status}
@@ -57,8 +94,7 @@ function Projects() {
                 {proj.desc}
               </p>
 
-              {/* Tags Techno + Bouton Details */}
-              {/* Ajout de 'items-center' pour l'alignement vertical */}
+              
               <div className="flex flex-wrap items-center gap-2 mt-auto w-full">
                 
                 {proj.tech.map((t) => (
@@ -67,7 +103,7 @@ function Projects() {
                   </span>
                 ))}
                 
-                {/* MODIFICATION ICI : ml-auto pousse l'élément à droite */}
+                
                 <div className="group ml-auto px-4 py-1 text-sm bg-blue-800/40 backdrop-blur-md border border-white/10 rounded-xl  shadow-xl hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] cursor-pointer hover:bg-blue-700/50">
                   <Link to={proj.link} className="flex items-center gap-2">
                     <span>details</span>

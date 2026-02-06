@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Home() {
   const cards = [
     { title: "Projets", text: "Découvrez mes projets récents et mes réalisations.", link: "/projects" },
-    { title: "Mes Skills", text: "En savoir plus sur mes compétences techniques.", link: "/about" },
+    { title: "A propos", text: "En savoir plus sur mon parcours et mes compétences techniques.", link: "/about" },
     { title: "Contact", text: "Contactez-moi via email ou LinkedIn pour collaborer.", link: "/contact" },
     { title: "Mon CV", text: "Téléchargez mon CV au format PDF.", link: "/CV"},
   ];
@@ -77,51 +77,6 @@ function Home() {
         </div>
       </div>
 
-      {/* --- SECTION 3 : PRÉSENTATION DÉTAILLÉE --- */}
-      <div className="flex justify-center pb-24 px-6 relative z-10 cursor-default">
-        <div className="p-8 md:p-12 max-w-4xl w-full 
-                        bg-gray-800/50 backdrop-blur-lg 
-                        border border-white/10 rounded-3xl shadow-2xl">
-          
-          <h2 className="text-3xl font-bold mb-8 text-center text-blue-400">Mon Parcours</h2>
-
-          {/* Texte aéré avec emojis */}
-          <div className="text-lg text-gray-300 space-y-8 text-justify leading-relaxed font-light">
-            
-            <p>
-              Je suis ravi de vous présenter ma personnalité et mes compétences sur ce portfolio 👋.
-            </p>
-            
-            <p>
-              Actuellement en 2ème année d'études d'Informatique à <a href="https://www.iut-lens.univ-artois.fr" className="text-blue-400 font-semibold hover:underline decoration-blue-400 underline-offset-4 transition-all">l'IUT de Lens</a> 🎓 et passionné par les jeux vidéo et les technologies 💻. J'exprime ma personnalité à travers ce projet regroupant tout mon parcours depuis le lycée jusqu'à aujourd'hui.
-            </p>
-            
-            <p>
-              En effet, depuis tout petit je joue aux jeux vidéo 🕹️. Plus tard, au collège, j'apprends <strong>Scratch</strong> et je commence à créer des mini-jeux comme le jeu du chat et de la souris ou Pong. Trouvant cela trop "facile", j'apprends au lycée qu'il existe une spécialité <strong>NSI</strong> (Numérique et Sciences Informatiques).
-            </p>
-            
-            <p>
-              Dans cette spécialité, j'ai appris le <strong>Python 🐍</strong>, l'HTML et le CSS. Bien sûr, je continue à créer des mini-jeux tels que la bataille navale et le morpion, mais je n'ai pas fait que des jeux. J'ai aussi créé un mini site web statique, appris à coder proprement et utilisé plusieurs librairies Python telles que Matplotlib 📊.
-            </p>
-            
-            <p>
-              À cause de Parcoursup, j'ai dû laisser la spécialité NSI en première pour continuer Mathématiques et Physique-Chimie afin d'ouvrir plus de portes. J'ai postulé à différentes formations, mais celle que j'espérais avoir est le <strong>BUT Informatique</strong>, dans lequel je suis actuellement. Grâce à cette formation, j'apprends beaucoup plus de langages, de méthodes de travail et je découvre mon futur possible en informatique.
-            </p>
-            
-            <div className="pt-4 border-t border-white/10">
-              <p>
-                J'ai d'autres qualifications en dehors de l'informatique, telles que le <strong>BAFA</strong> que j'ai obtenu en 2024 ⛺. Suite à diverses expériences professionnelles en tant qu'animateur, j'ai géré des groupes de 10 à 17 ans. Également, j'ai participé au SNU et je suis devenu bénévole à la <strong>Croix-Rouge de Mazingarbe</strong> ⛑️, où je triais des habits pour les personnes dans le besoin.
-              </p>
-            </div>
-            <div className=" flex justify-center">
-              <p>
-                Bonne Visite
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </div>
 
     </div>
   );

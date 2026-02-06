@@ -7,7 +7,7 @@ function Footer() {
         
         {/* Texte principal */}
         <p className="text-gray-400 mb-4 cursor-default">
-          Conçu et développé avec <span className="text-red-500 animate-pulse">❤️</span> et <span className="text-blue-400 font-bold">React</span> par Antoine.
+          Conçu et développé avec <span className="text-red-500 animate-pulse">❤️</span> et <span className="text-blue-400 font-bold">React</span> par Antoine Mouille.
         </p>
 
         {/* Liens Sociaux (Icones ou Texte) */}
