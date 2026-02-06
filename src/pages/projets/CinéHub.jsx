@@ -23,7 +23,7 @@ function Cinehub(){
   ];
 
   const projectMedia = [
-    { type: 'image', url: './public/photo/cinehub1.png' },
+    { type: 'image', url: './photo/cinehub1.png' },
     { type: 'image', url: './public/photo/cinehub2.png' },
     { type: 'image', url: './public/photo/cinehub3.png' },
     { type: 'image', url: './public/photo/cinehub4.png' },
