@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faPhp, faJava, faLaravel, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { SiTailwindcss, SiVite } from "react-icons/si";
+import { SiGit, SiGitlab, SiTailwindcss, SiVite } from "react-icons/si";
 import IconLogo from '../../components/IconLogo';
 import Back from '../../components/Back';
 
@@ -23,9 +23,11 @@ function Lensymphony(){
      ];
    
      const projectMedia = [
-       { type: 'image', url: 'https://via.placeholder.com/800x450?text=Capture+1' },
-       { type: 'video', url: 'https://www.w3schools.com/html/mov_bbb.mp4' },
-       { type: 'image', url: 'https://via.placeholder.com/800x450?text=Capture+2' },
+       { type: 'video', url: './lensymphony4.mp4'},
+       { type: 'video', url: './lensymphony3.mp4'},
+       { type: 'video', url: './lensymphony2.mp4'},
+       { type: 'video', url: './Lensymphony1.mp4'},
+       { type: 'image', url: './lensymphony1.png'},
      ];
    
      const scroll = (direction) => {
@@ -46,7 +48,7 @@ function Lensymphony(){
          <div className="relative container mx-auto px-4 flex flex-col items-center justify-center gap-12">
            <div className="p-8 max-w-3xl w-full text-center">
              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-               CINÉ<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">HUB</span>
+               LENS<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">YMPHONY</span>
              </h1>
            </div>
    
@@ -73,6 +75,18 @@ function Lensymphony(){
                    <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Vite</span>
                  </div>
                </div>
+               <div className="p-2 w-48 text-center bg-gray-800/40 backdrop-blur-md border border-white/10 rounded-3xl shadow-2xl z-10 cursor-default hover:border-purple-400/30 transition-all">
+                 <div className="flex items-center justify-center gap-2">
+                   <SiGit className="text-white text-xl" />
+                   <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Git</span>
+                 </div>
+               </div>
+               <div className="p-2 w-48 text-center bg-gray-800/40 backdrop-blur-md border border-white/10 rounded-3xl shadow-2xl z-10 cursor-default hover:border-purple-400/30 transition-all">
+                 <div className="flex items-center justify-center gap-2">
+                   <SiGitlab className="text-white text-xl" />
+                   <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Gitlab</span>
+                 </div>
+               </div>
              </div>
            </div>
    
@@ -94,7 +108,7 @@ function Lensymphony(){
                  {projectMedia.map((item, index) => (
                    <div key={index} className="min-w-full snap-center flex items-center justify-center bg-gray-800/30 aspect-video">
                      {item.type === 'video' ? (
-                       <video src={item.url} controls className="w-full h-full object-cover" />
+                      <video src={item.url}  muted autoPlay loop playsInline className="w-full h-full object-cover" />
                      ) : (
                        <img src={item.url} alt={`Aperçu ${index}`} className="w-full h-full object-cover" />
                      )}
@@ -110,7 +124,9 @@ function Lensymphony(){
                </button>
              </div>
              <div className='flex justify-center cursor-pointer'>
-               <button className=' mt-6'><a href='https://github.com/AntoineMouille/portfolio' className='cursor-pointer'><IconLogo name="Github" link={faGithub}/></a></button>
+               <button className=' m-6'><a href='https://github.com/AntoineMouille/Lensymphonny_web_iut' className='cursor-pointer'><IconLogo name="Github partie web" link={faGithub}/></a></button>
+               <button className=' m-6'><a href='https://github.com/AntoineMouille/Lensymphonny_iut' className='cursor-pointer'><IconLogo name="Github partie app" link={faGithub}/></a></button>
+
              </div>
            </div>
          </div>
